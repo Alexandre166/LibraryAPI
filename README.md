@@ -16,5 +16,7 @@ Esse é meu primeiro projeto de portifólio e espero conseguir entregar tudo que
 ## Atualizações
 _14/4_ 10:01: Vou ver como vou fazer pra conseguir puxar o primeiro valor que a API retorna. Tanto o Books API da google e o Open Libray estão retornando vários valores, mesmo se tento nichar o máximo a pesquisa com Nome do livro e autoria. Mesmo assim retorna valores de outros autores e de várias edições e derivados dos livros.  
 Ex: O Hobbit - J. R. R. Tolkien. (Todas as informações referente)  
-    O Hobbit anotado - Douglas A. Anderson (Todas as informações referentes)  
+   O Hobbit anotado - Douglas A. Anderson (Todas as informações referentes)  
 Esse pequeno problema que me complica, pois se tento pegar o valor referente à chave "Autor", a API me retorna centenas de valores e mesmo que eu tente pegar o primeiro destes, pode ser que ele esteja errado e seja de outro autor.
+_14/4 11:11 11🕦: Vou focar em fazer as relações entre as classes antes de começar com as APIs
+
