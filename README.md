@@ -18,5 +18,6 @@ _14/4_ 10:01: Vou ver como vou fazer pra conseguir puxar o primeiro valor que a 
 Ex: O Hobbit - J. R. R. Tolkien. (Todas as informações referente)  
    O Hobbit anotado - Douglas A. Anderson (Todas as informações referentes)  
 Esse pequeno problema que me complica, pois se tento pegar o valor referente à chave "Autor", a API me retorna centenas de valores e mesmo que eu tente pegar o primeiro destes, pode ser que ele esteja errado e seja de outro autor.
-_14/4 11:11 11🕦: Vou focar em fazer as relações entre as classes antes de começar com as APIs
+_14/4_ 11:11: Vou focar em fazer as relações entre as classes antes de começar com as APIs
+_15/4 10:02: Eu vou fazer a conexão com o banco de dados em PostgreSQL. Eu acho que olhando um esquema de como a base funciona, eu consigo ter uma noção melhor do que está acontecendo com cada classe. 
 
