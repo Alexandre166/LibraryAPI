@@ -1,5 +1,7 @@
 package com.example.crudJson.Model;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Date;
 
 public class HoldRequest {
@@ -8,10 +10,14 @@ public class HoldRequest {
     Book book;
     Date date;
 
-    public HoldRequest(Borrower borrower, Book book, Date date) {
+    LocalDateTime dataHoraAtual = LocalDateTime.now();
+    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
+    String dataHoraFormatada = dataHoraAtual.format(formatter);
+
+    public HoldRequest(Borrower borrower, Book book) {
         this.borrower = borrower;
         this.book = book;
-        this.date = date;
+        this.date = new Date(dataHoraFormatada);
     }
 
     public Borrower getBorrower() {
@@ -34,4 +40,5 @@ public class HoldRequest {
                 ", date=" + date +
                 '}';
     }
+
 }

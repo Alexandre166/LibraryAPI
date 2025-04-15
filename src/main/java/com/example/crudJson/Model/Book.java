@@ -1,8 +1,12 @@
 package com.example.crudJson.Model;
 
+import com.google.gson.annotations.SerializedName;
+
 public class Book {
     private int id;
-    private String title, author, subject;
+    private String  title;
+    private String author;
+    private String subject;
     private boolean isIssued;
 
     public Book(int id, String title, String author, String subject, boolean isIssued) {
@@ -44,16 +48,14 @@ public class Book {
                 '}';
     }
 
-    public void changeBookInfo(){}
-
-    public void addHoldRequest(){}
-
-    public void issueBook(){
-
+    public void returnBook(){
+        this.isIssued = true;
     }
 
-
-
-
-
+    public void issueBook(){
+        if(!isIssued){
+            throw new IllegalStateException("Book is issued");
+        }
+        this.isIssued = false;
+    }
 }
